@@ -1,0 +1,44 @@
+CREAT DATABASE `QL_TH` ;
+
+CREATE TABLE `QL_TH`.`phongban` (`MaPB` VARCHAR(5) NOT NULL,`TenPB` VARCHAR(45) NULL,PRIMARY KEY (`MaPB`));
+
+CREATE TABLE `ql_th`.`nhanvien` (`MaNV` VARCHAR(5) NOT NULL,`HoTen` VARCHAR(45) NOT NULL,`NgaySinh` DATE NOT NULL,`GioiTinh` VARCHAR(10) NOT NULL,`SDT` VARCHAR(10) NULL,`PhongBan` VARCHAR(5) NOT NULL,PRIMARY KEY (`MaNV`));
+
+CREATE TABLE `ql_th`.`tomon` (`MaGV` VARCHAR(5) NOT NULL,`ChuyenMon` VARCHAR(45) NOT NULL,`ChucVu` VARCHAR(45) NOT NULL,`MaTT` VARCHAR(10) NOT NULL,PRIMARY KEY (`MaGV`));
+
+CREATE TABLE `ql_th`.`lophoc` (`MaL` VARCHAR(5) NOT NULL,`TenL` VARCHAR(45) NOT NULL,`SiSo` VARCHAR(5) NOT NULL,`GVCN` VARCHAR(5) NOT NULL,`GVT` VARCHAR(5) NULL,`GVL` VARCHAR(5) NULL,`GVH` VARCHAR(5) NULL,PRIMARY KEY (`MaL`));
+
+INSERT INTO `phongban`(`MaPB`, `TenPB`) VALUES 
+('BV',n'Bảo vệ'),
+('GV',n'Giáo viên'),
+('LC',n'Lao Công')
+
+INSERT INTO `nhanvien`(`MaNV`, `HoTen`, `NgaySinh`, `GioiTinh`, `SDT`, `PhongBan`) VALUES 
+('BV1',n'Trần Bảo Vệ','1991-12-26','Nam','03154467854','BV'),
+('GV1',n'Nguyễn A','1989-10-12','Nam','0931065041','GV'),
+('GV2',n'Trần Văn B','1990-4-12','Nam','012324654','GV'),
+('GV3',n'Huỳnh D','1994-5-4',n'Nữ','02154587954','GV'),
+('GV4',n'Trần B Hoài','1993-7-9',n'Nam','02365465587','GV'),
+('GV5',n'Lý Xuân Diệu','1995-2-27',n'Nữ','0960501020','GV'),
+('GV6',n'Nguyễn Hoài Trương','1993-8-16',n'Nam','0521556421','GV'),
+('GV7',n'Trường Xuân','1994-9-20',n'Nam','0730554850','GV'),
+('GV8',n'Bao Tin Hà','1995-1-7',n'Nữ','0213224566','GV'),
+('GV9',n'Huỳnh Khúc Sương','1996-4-4',n'Nữ','0931096020','GV'),
+('LC1',n'Lao Thị Công','1990-6-17',n'Nữ','03982256012','GV')
+
+INSERT INTO `tomon`(`MaGV`, `ChuyenMon`, `ChucVu`, `MaTT`) VALUES 
+('GV1',n'Vật Lý',n'Hiệu Trưởng','GV8'),
+('GV2',n'Toán',n'Tổ Trưởng',''),
+('GV3',n'Hóa Học',n'Hiệu Phó','GV9'),
+('GV4',n'Toán',n'GVBM','GV2'),
+('GV5',n'Toán',n'GVBM','GV2'),
+('GV6',n'Vật Lý',n'GVBM','GV8'),
+('GV7',n'Hóa Học',n'GVBM','GV9'),
+('GV8',n'Vật Lý',n'Tổ Trưởng',''),
+('GV9',n'Hóa Học',n'Tổ Trưởng','')
+
+INSERT INTO `lophoc`(`MaL`, `TenL`, `SiSo`, `GVCN`, `GVT`, `GVL`, `GVH`) VALUES 
+('L01','10A1','30','GV5','GV5','GV6','GV7'),
+('L02','10A2','35','GV6','GV5','GV6','GV7'),
+('L03','11A1','45','GV4','GV4','GV6','GV7'),
+('L04','12A1','35','GV7','GV4','GV6','GV7')
