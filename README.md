@@ -14,7 +14,7 @@
 ### Thực hiện thao tác thêm mới nhân viên, ta điền đầy đủ thông tin cần nhập vào các textbox và ấn button "Thêm" để thực hiện thêm nhân viên mới:
 ![](pic/add_1.png)
 ![](pic/add_2.png)
-### Muốn chỉnh sửa thông tin, ta chỉ cần điền vào mã nhân viên mà ta muốn sữa, chỉnh sửa lại thông tin mới trên textbox, vầ ấn button "Sửa" để thực thi cập nhận thông tin
+### Muốn chỉnh sửa thông tin, ta chỉ cần điền vào mã nhân viên mà ta muốn sửa, chỉnh sửa lại thông tin mới trên textbox, vầ ấn button "Sửa" để thực thi cập nhận thông tin
 ![](pic/upload_1.png)
 ![](pic/upload_2.png)
 ### Để xóa nhân viên, ta chỉ cần click vào đầu dòng của nhân viên mà ta cần muốn xóa và thực hiện button "Xóa"
